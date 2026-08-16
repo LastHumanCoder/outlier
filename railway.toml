@@ -2,5 +2,9 @@
 builder = "dockerfile"
 
 [deploy]
-startCommand = "uvicorn app:app --host 0.0.0.0 --port $PORT"
+# No startCommand on purpose. The Dockerfile CMD is shell form and expands
+# ${PORT:-8000} itself. Declaring it here too risks the value being passed
+# without a shell, in which case uvicorn receives the literal string "$PORT"
+# and exits before it can bind.
 restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
