@@ -1,0 +1,390 @@
+{
+  "seed": "hubspot",
+  "you": {
+    "username": "hubspot",
+    "fullName": "HubSpot",
+    "biography": "The agentic customer platform to scale your business.",
+    "followers": 656402,
+    "postsCount": 3247,
+    "engagementRate": 0.00023,
+    "medianEngagement": 153,
+    "teardowns": [
+      {
+        "shortCode": "DZU7BVIxEG3",
+        "url": "https://www.instagram.com/p/DZU7BVIxEG3/",
+        "lift": 1.0,
+        "likes": 27931,
+        "comments": 659,
+        "views": 818719,
+        "caption": "@imkylecooke has never once taken anyone\u2019s advice. But he took ours.\n\nThat\u2019s because HubSpot AEO showed him that his canned cocktail company @drinkloverboy wasn\u2019t showing up in AI search. It also showed him who was beating them, what to fix, and what prompts to track to stay at the top.\n\nNow when someone asks AI for a canned summer cocktail reco, Loverboy is the answer. \n\nZero crash outs. \n\nOK, on",
+        "rhythm": {
+          "durationSec": 72.37,
+          "cuts": 17,
+          "cutsPerSec": 0.23,
+          "avgShotSec": 4.02,
+          "firstCutSec": 7.22
+        },
+        "transcript": "",
+        "frames": [
+          "DZU7BVIxEG3/frame_00.jpg",
+          "DZU7BVIxEG3/frame_01.jpg",
+          "DZU7BVIxEG3/frame_02.jpg",
+          "DZU7BVIxEG3/frame_03.jpg",
+          "DZU7BVIxEG3/frame_04.jpg",
+          "DZU7BVIxEG3/frame_05.jpg"
+        ],
+        "hookLine": "Everything all",
+        "hookTechnique": "story-open",
+        "hookSeconds": 7.2,
+        "format": "skit",
+        "onScreenText": "Minimal white sans-serif captions bottom-center with a lower-third identifier reading 'KYLE COOKE Loverboy CEO'.",
+        "pacing": "Slow, deliberate reality-TV confessional pacing that allows conversational comedic timing to land.",
+        "cta": "Try it free at hubspot.com/aeo",
+        "whyItWorked": "The video mimics a recognizable Bravo-style reality TV confessional featuring Summer House star Kyle Cooke to subvert typical B2B software ads. Grounding technical AEO marketing in his known personality and brand (Loverboy) made standard corporate advice feel entertaining and culturally relevant.",
+        "replicable": "Parody a reality-TV confessional format with a known industry figure to pitch technical B2B features through entertainment."
+      },
+      {
+        "shortCode": "DanP7MQBY4_",
+        "url": "https://www.instagram.com/p/DanP7MQBY4_/",
+        "lift": 1.0,
+        "likes": 929,
+        "comments": 25,
+        "views": 107164,
+        "caption": "For anybody looking to grow their business, big or small, new or established, it\u2019s all about having the right tools. Business moves quickly anytime, but in the era of AI it\u2019s even faster. If you want to make sure your business shows up in the right places, @Hubspot AEO is here to help! I got so much useful info that will help make sure we are making the right content that will reach more people in",
+        "rhythm": {
+          "durationSec": 87.93,
+          "cuts": 19,
+          "cutsPerSec": 0.22,
+          "avgShotSec": 4.4,
+          "firstCutSec": 4.29
+        },
+        "transcript": "",
+        "frames": [
+          "DanP7MQBY4_/frame_00.jpg",
+          "DanP7MQBY4_/frame_01.jpg",
+          "DanP7MQBY4_/frame_02.jpg",
+          "DanP7MQBY4_/frame_03.jpg",
+          "DanP7MQBY4_/frame_04.jpg",
+          "DanP7MQBY4_/frame_05.jpg"
+        ],
+        "hookLine": "ugh",
+        "hookTechnique": "pattern-interrupt",
+        "hookSeconds": 4.29,
+        "format": "talking-head",
+        "onScreenText": "Minimal, word-by-word standard subtitles placed lower-center.",
+        "pacing": "Deliberate and personality-driven with relaxed ~4.4-second cuts.",
+        "cta": "Try it free today at hubspot",
+        "whyItWorked": "The creator uses high-energy, relatable reactions alongside visible physical products to humanize technical B2B software. Framing AI search optimization through a personal business check-in keeps the sponsored message authentic.",
+        "replicable": "Screen-test your brand's AI search visibility live on camera with expressive, unscripted reactions."
+      }
+    ]
+  },
+  "competitors": [
+    {
+      "username": "viicc.me",
+      "fullName": "ViiCC",
+      "biography": "AI call Assistant",
+      "followers": 202,
+      "postsCount": 74,
+      "engagementRate": 0.0099,
+      "medianEngagement": 2,
+      "teardowns": [
+        {
+          "shortCode": "DLpszlCMnbk",
+          "url": "https://www.instagram.com/p/DLpszlCMnbk/",
+          "lift": 53.5,
+          "likes": 103,
+          "comments": 4,
+          "views": 1857,
+          "caption": "\u2728 From AI voicemail to flawless headshots to social media help\u2014we handle the boring stuff, so you can shine.\n All day. Every day. Automatically. \ud83d\ude0e\n\n\ud83c\udfa7 Turn the music up, let ViiC handle business.\n Try it now & vibe smarter.\n\n#ThatsWhatViicDoes #AIAssistant #BusinessGlowUp #SmartBizTools #AIForEntrepreneurs #BrunoMarsVibes #BossModeActivated #AutomateEverything #DigitalAssistant #ProductivityHack #S",
+          "rhythm": {
+            "durationSec": 90.47,
+            "cuts": 3,
+            "cutsPerSec": 0.03,
+            "avgShotSec": 22.62,
+            "firstCutSec": 24.03
+          },
+          "transcript": "",
+          "frames": [
+            "DLpszlCMnbk/frame_00.jpg",
+            "DLpszlCMnbk/frame_01.jpg",
+            "DLpszlCMnbk/frame_02.jpg",
+            "DLpszlCMnbk/frame_03.jpg"
+          ],
+          "hookLine": "THERE HAS GOT TO BE A BETTE",
+          "hookTechnique": "story-open",
+          "hookSeconds": 3.0,
+          "format": "skit",
+          "onScreenText": "Top-left serif hook text followed by bold, capitalized bottom-center lyric subtitles.",
+          "pacing": "Very slow, music-video style cuts allowing viewers to absorb detailed animations and lyrics.",
+          "cta": "none",
+          "whyItWorked": "It reframes boring B2B automation tools into a vibrant, high-production animated musical parody. The stark contrast between a stressed professional and an effortless AI assistant handling leads created instant emotional resonance.",
+          "replicable": "Turn SaaS feature explanations into a music video parody with rhythmic animated visuals."
+        },
+        {
+          "shortCode": "DMhSoq7JYyp",
+          "url": "https://www.instagram.com/p/DMhSoq7JYyp/",
+          "lift": 2.0,
+          "likes": 3,
+          "comments": 1,
+          "views": 189,
+          "caption": "\u2800\nThat\u2019s what Pixel does.  #ai",
+          "rhythm": {
+            "durationSec": 24.47,
+            "cuts": 6,
+            "cutsPerSec": 0.25,
+            "avgShotSec": 3.5,
+            "firstCutSec": 6.08
+          },
+          "transcript": "",
+          "frames": [
+            "DMhSoq7JYyp/frame_00.jpg",
+            "DMhSoq7JYyp/frame_01.jpg",
+            "DMhSoq7JYyp/frame_02.jpg",
+            "DMhSoq7JYyp/frame_03.jpg",
+            "DMhSoq7JYyp/frame_04.jpg",
+            "DMhSoq7JYyp/frame_05.jpg"
+          ],
+          "hookLine": "Answers calls Verify you are human",
+          "hookTechnique": "pattern-interrupt",
+          "hookSeconds": 6.08,
+          "format": "voiceover-broll",
+          "onScreenText": "Minimalist black text and simple UI graphics centered on a white background",
+          "pacing": "Deliberate and steady cuts establishing a sleek, premium commercial tone",
+          "cta": "none",
+          "whyItWorked": "The opening visual uses an ironic CAPTCHA prompt to humorously highlight spam call frustration. It directly connects abstract AI utility to relatable real-world lifestyle scenarios.",
+          "replicable": "Open with a minimalist graphic illustrating a universal daily annoyance before cutting to practical lifestyle solutions."
+        }
+      ]
+    },
+    {
+      "username": "_socialjack_",
+      "fullName": "SocialJack Media",
+      "biography": "Want to conquer your local market? We help grow your business with proven marketing strategies, technology, & services. \ud83d\udca5 Request a consult today\ud83d\udc47\ud83d\udc47\ud83d\udc47",
+      "followers": 32026,
+      "postsCount": 998,
+      "engagementRate": 0.0037,
+      "medianEngagement": 129,
+      "teardowns": [
+        {
+          "shortCode": "DXpeXIKiWHR",
+          "url": "https://www.instagram.com/p/DXpeXIKiWHR/",
+          "lift": 5.27,
+          "likes": 617,
+          "comments": 8,
+          "views": 7492,
+          "caption": "Sometimes you need a little superpower to get a deal done.\n\nAI can make us faster.\nSmarter.\nEven look like a superhero.\n\nBut it can\u2019t replace a handshake.\nIt can\u2019t replace presence.\nIt can\u2019t replace trust.\n\nBecause when you walk into the right home\u2026\nyou don\u2019t need data to feel it.\n\nThat\u2019s the difference.\n\nReal estate isn\u2019t just about marketing, technology and social media \nit\u2019s human and connectio",
+          "rhythm": {
+            "durationSec": 26.56,
+            "cuts": 13,
+            "cutsPerSec": 0.49,
+            "avgShotSec": 1.9,
+            "firstCutSec": 3.96
+          },
+          "transcript": "",
+          "frames": [
+            "DXpeXIKiWHR/frame_00.jpg",
+            "DXpeXIKiWHR/frame_01.jpg",
+            "DXpeXIKiWHR/frame_02.jpg",
+            "DXpeXIKiWHR/frame_03.jpg",
+            "DXpeXIKiWHR/frame_04.jpg",
+            "DXpeXIKiWHR/frame_05.jpg"
+          ],
+          "hookLine": "Can AI",
+          "hookTechnique": "question",
+          "hookSeconds": 3.96,
+          "format": "voiceover-broll",
+          "onScreenText": "Minimal orange serif text with a red glow, centered or lower-third, displaying short phrases per cut.",
+          "pacing": "Deliberate, steady cut rhythm that builds a contemplative contrast between technology and human connection.",
+          "cta": "DM \"TRUST\" and let\u2019s talk.",
+          "whyItWorked": "It taps into industry anxiety around AI by affirming the irreplaceable value of human trust and physical presence. The visual contrast between an isolated phone booth and warm, interpersonal home showings creates strong emotional resonance.",
+          "replicable": "Position yourself against AI automation by showcasing high-touch, human-only aspects of your service."
+        },
+        {
+          "shortCode": "DXrLK8RADqT",
+          "url": "https://www.instagram.com/p/DXrLK8RADqT/",
+          "lift": 4.51,
+          "likes": 534,
+          "comments": 0,
+          "views": 2124,
+          "caption": "If your fitness studio is relying on word of mouth and a basic Instagram account to grow in 2026, you're leaving a lot of members on the table.\n\nHere's what the gyms and studios that are winning right now are doing differently:\n\n\u2192 They show up on Google when someone searches \"gym near me\" \u2014 every single time\n\n\u2192 They run Meta ads targeting people who just moved to the area, recently searched for fi",
+          "rhythm": {
+            "durationSec": 36.84,
+            "cuts": 13,
+            "cutsPerSec": 0.35,
+            "avgShotSec": 2.63,
+            "firstCutSec": 2.5
+          },
+          "transcript": "",
+          "frames": [
+            "DXrLK8RADqT/frame_00.jpg",
+            "DXrLK8RADqT/frame_01.jpg",
+            "DXrLK8RADqT/frame_02.jpg",
+            "DXrLK8RADqT/frame_03.jpg",
+            "DXrLK8RADqT/frame_04.jpg",
+            "DXrLK8RADqT/frame_05.jpg"
+          ],
+          "hookLine": "TOP 10 DIGITAL MARKETING STRATEGIES FOR GYMS",
+          "hookTechnique": "callout",
+          "hookSeconds": 2.5,
+          "format": "listicle",
+          "onScreenText": "Bold hook title card followed by bottom-center kinetic subtitles and 2D/3D motion graphics.",
+          "pacing": "Consistent ~2.6s cuts alternating between live-action gym scenes and stylized animations.",
+          "cta": "none",
+          "whyItWorked": "The video instantly hooks gym owners with a targeted, high-value listicle format. Alternating between relatable gym b-roll and colorful motion graphics kept retention high throughout the tips.",
+          "replicable": "Lead with a clear, niche-specific listicle hook and alternate stock footage with animated 3D icons."
+        }
+      ]
+    },
+    {
+      "username": "jjluizgomes",
+      "fullName": "Jorge Luiz",
+      "biography": "\u2728 46 anos, solteiro, vivendo a vida com leveza e muita paz! \n\u2728 Adoro cada momento e espalho boas energias por onde passo \n\u2728 Vem curtir a vida comigo!",
+      "followers": 17155,
+      "postsCount": 264,
+      "engagementRate": 0.00111,
+      "medianEngagement": 19,
+      "teardowns": [
+        {
+          "shortCode": "DXDYBvxDOcl",
+          "url": "https://www.instagram.com/p/DXDYBvxDOcl/",
+          "lift": 2.68,
+          "likes": 51,
+          "comments": 0,
+          "views": 4987,
+          "caption": "",
+          "rhythm": {
+            "durationSec": 17.65,
+            "cuts": 0,
+            "cutsPerSec": 0.0,
+            "avgShotSec": 17.65,
+            "firstCutSec": null
+          },
+          "transcript": "",
+          "frames": [
+            "DXDYBvxDOcl/frame_00.jpg",
+            "DXDYBvxDOcl/frame_01.jpg",
+            "DXDYBvxDOcl/frame_02.jpg",
+            "DXDYBvxDOcl/frame_03.jpg",
+            "DXDYBvxDOcl/frame_04.jpg"
+          ],
+          "hookLine": "amos arrasar nas elei\u00e7\u00f5es \ud83d\udc83\ud83d\udc83",
+          "hookTechnique": "pattern-interrupt",
+          "hookSeconds": 1.5,
+          "format": "skit",
+          "onScreenText": "Centered white text card with black font and salsa dancer emojis.",
+          "pacing": "Single continuous take that holds attention through bizarre, uninterrupted visual absurdity.",
+          "cta": "none",
+          "whyItWorked": "Deepfaking fierce political rivals Lula and Bolsonaro onto models strutting in Powerpuff Girls shorts and high heels created instant comedic shock value. The surreal juxtaposition prompted massive cross-political sharing and meme engagement.",
+          "replicable": "Face-swap polar-opposite public figures or rivals into an absurd, synchronized comedic walk."
+        },
+        {
+          "shortCode": "DUM-fz3DCwW",
+          "url": "https://www.instagram.com/p/DUM-fz3DCwW/",
+          "lift": 2.26,
+          "likes": 43,
+          "comments": 0,
+          "views": 388,
+          "caption": "",
+          "rhythm": {
+            "durationSec": 1.51,
+            "cuts": 0,
+            "cutsPerSec": 0.0,
+            "avgShotSec": 1.51,
+            "firstCutSec": null
+          },
+          "transcript": "",
+          "frames": [
+            "DUM-fz3DCwW/frame_00.jpg"
+          ],
+          "hookLine": "none",
+          "hookTechnique": "pattern-interrupt",
+          "hookSeconds": 1.51,
+          "format": "selfie-video",
+          "onScreenText": "none",
+          "pacing": "Ultra-short single take that loops immediately, driving instant replay metrics.",
+          "cta": "none",
+          "whyItWorked": "The visual thirst-trap presentation immediately grabs attention with strong physical appeal. The ultra-short 1.5-second duration causes viewers to loop the video multiple times before scrolling, heavily boosting algorithmic retention scores.",
+          "replicable": "Post ultra-short, under-2-second visually striking loops to force automatic replays and maximize completion rate."
+        }
+      ]
+    }
+  ],
+  "verdict": "HubSpot's content, while attempting entertainment, remains too product-centric and lacks the extreme, culturally resonant, or emotionally provocative elements that drive viral engagement in its niche. Its consistent, deliberate pacing and direct CTAs prioritize information delivery over the immediate, captivating hooks and diverse formats that outperformers use to maximize reach and retention.",
+  "gaps": [
+    {
+      "dimension": "hooks",
+      "them": "Outperformers use immediate, often shocking or highly specific hooks, such as 'THERE HAS GOT TO BE A BETTE' (viicc.me, 3.0s) or 'amos arrasar nas elei\u00e7\u00f5es' (jjluizgomes, 1.5s).",
+      "you": "HubSpot's hooks are longer and less abrupt, like 'Everything all' (7.2s) or 'ugh' (4.29s).",
+      "fix": "Shorten hooks to under 3 seconds and incorporate more direct pattern interrupts or highly specific value propositions."
+    },
+    {
+      "dimension": "pacing",
+      "them": "Outperformers utilize a wider range of pacing, from ultra-short loops (jjluizgomes, 1.51s total duration) to very fast cuts (SocialJack Media, avgShotSec: 1.9s) or very slow, high-production pieces (viicc.me, avgShotSec: 22.62s).",
+      "you": "HubSpot's pacing is consistently 'deliberate' with average shot durations around 4.02s to 4.4s.",
+      "fix": "Experiment with both much faster-paced content (avg shot under 2 seconds) and extremely short, looping videos (under 2 seconds total duration) to maximize retention."
+    },
+    {
+      "dimension": "format",
+      "them": "Outperformers leverage diverse formats like animated musical parodies (viicc.me's DLpszlCMnbk), listicles (_socialjack_'s DXrLK8RADqT), and ultra-short selfie-videos (jjluizgomes's DUM-fz3DCwW).",
+      "you": "HubSpot primarily uses 'skit' (confessional style) and 'talking-head' formats.",
+      "fix": "Diversify content formats to include animated parodies, listicles, and visually striking, ultra-short loops."
+    },
+    {
+      "dimension": "on-screen text",
+      "them": "Outperformers use dynamic and varied on-screen text, including bold, capitalized lyric subtitles (viicc.me's DLpszlCMnbk), glowing serif text (_socialjack_'s DXpeXIKiWHR), or text cards with emojis (jjluizgomes's DXDYBvxDOcl).",
+      "you": "HubSpot uses 'Minimal white sans-serif captions' or 'Minimal, word-by-word standard subtitles.'",
+      "fix": "Incorporate more dynamic, visually engaging, and varied on-screen text styles, including bold fonts, emojis, and kinetic text animations."
+    },
+    {
+      "dimension": "CTA",
+      "them": "Outperformers frequently omit direct CTAs or use softer, engagement-focused CTAs like 'DM \"TRUST\" and let\u2019s talk.' (_socialjack_'s DXpeXIKiWHR).",
+      "you": "HubSpot consistently includes direct product CTAs such as 'Try it free at hubspot.com/aeo.'",
+      "fix": "Experiment with omitting direct CTAs on highly engaging, viral-focused content, or use softer, engagement-driven CTAs that encourage interaction rather than immediate conversion."
+    },
+    {
+      "dimension": "topics",
+      "them": "Outperformers tackle broader industry anxieties (AI vs. human touch), reframe boring B2B tools into vibrant entertainment, or use extreme, culturally relevant humor (political deepfakes).",
+      "you": "HubSpot's topics, even when entertaining, remain focused on explaining specific product features like AEO.",
+      "fix": "Shift focus from direct product feature explanation to addressing broader industry pain points, anxieties, or cultural trends, using extreme humor or relatable scenarios to position HubSpot as the solution."
+    }
+  ],
+  "concepts": [
+    {
+      "title": "Automated Business Symphony",
+      "hook": "MY BUSINESS IS DROWNING IN DATA!",
+      "format": "skit",
+      "why": "This concept mimics viicc.me's DLpszlCMnbk by reframing a common B2B pain point (manual data entry, complex automation setup) into a vibrant, high-production animated musical parody, creating instant emotional resonance through entertainment.",
+      "modeledOn": "https://www.instagram.com/p/DLpszlCMnbk/"
+    },
+    {
+      "title": "Lost Leads? CAPTCHA Challenge",
+      "hook": "LOST LEADS? (CAPTCHA: Are you human?)",
+      "format": "voiceover-broll",
+      "why": "Drawing from viicc.me's DMhSoq7JYyp, this concept uses an ironic, minimalist graphic (like a CAPTCHA for 'Lost Leads') to humorously highlight a universal business frustration before cutting to a sleek, practical HubSpot solution for lead capture or nurturing.",
+      "modeledOn": "https://www.instagram.com/p/DMhSoq7JYyp/"
+    },
+    {
+      "title": "AI vs. Human Touch: The Trust Factor",
+      "hook": "Can AI truly understand your customer's pain?",
+      "format": "voiceover-broll",
+      "why": "Inspired by _socialjack_'s DXpeXIKiWHR, this concept taps into industry anxiety around AI by affirming the irreplaceable value of human trust and physical presence, visually contrasting cold AI interactions with warm, personalized customer experiences powered by HubSpot.",
+      "modeledOn": "https://www.instagram.com/p/DXpeXIKiWHR/"
+    },
+    {
+      "title": "Top 5 Growth Hacks for E-commerce Startups",
+      "hook": "TOP 5 GROWTH HACKS FOR E-COMMERCE STARTUPS",
+      "format": "listicle",
+      "why": "This concept directly models _socialjack_'s DXrLK8RADqT by instantly hooking a specific niche (e-commerce startups) with a high-value listicle, alternating between relatable b-roll and colorful motion graphics to integrate HubSpot features as actionable solutions.",
+      "modeledOn": "https://www.instagram.com/p/DXrLK8RADqT/"
+    },
+    {
+      "title": "Instant Workflow Automation Loop",
+      "hook": "(Visual of a complex, messy spreadsheet instantly transforming into a clean, organized HubSpot dashboard)",
+      "format": "ultra-short loop",
+      "why": "Mimicking jjluizgomes's DUM-fz3DCwW, this concept creates an ultra-short, visually striking loop (under 2 seconds) that showcases a single, powerful HubSpot benefit (e.g., instant automation) to force automatic replays and maximize algorithmic retention scores.",
+      "modeledOn": "https://www.instagram.com/p/DUM-fz3DCwW/"
+    }
+  ],
+  "id": 4
+}

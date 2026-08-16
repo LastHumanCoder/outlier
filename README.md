@@ -57,7 +57,7 @@ public CDN URL. Nothing in this repo wants your session cookie.
 Needs Python 3.11+ and `ffmpeg` on PATH.
 
 ```bash
-git clone <repo> && cd outlier
+git clone https://github.com/LastHumanCoder/outlier && cd outlier
 uv venv --python 3.12 .venv && uv pip install -r requirements.txt
 cp .env.example .env    # then fill in whichever keys you have
 ```
@@ -74,13 +74,33 @@ Set the model with `OUTLIER_MODEL=provider:model`. Default is `gemini:gemini-3.7
 supported are `anthropic:claude-sonnet-4-6`, `openai:gpt-4o` and
 `openrouter:anthropic/claude-sonnet-4.6`. It must be vision-capable.
 
+## See it without installing anything
+
+[`samples/`](samples/) holds a real teardown of `@hubspot` produced by this tool: the verdict, six
+gaps, five sourced concepts, and the measured cut rhythm of every reel involved. Nothing in it is
+illustrative.
+
+## Deploy it
+
+```bash
+railway up
+```
+
+`Dockerfile` and `railway.toml` are included. The image installs ffmpeg, the three Python
+dependencies, and renders the sample dataset at build time so a fresh deploy has something to show
+rather than an empty dashboard. Set `APIFY_TOKEN`, `GEMINI_API_KEY` and `VIDEODB_API_KEY` as
+service variables to enable live runs. It listens on `$PORT`.
+
 ## Run it with no keys at all
 
 ```bash
-python -m outlier.cli fixtures
-python -m outlier.cli run sample.seed
-python -m outlier.cli serve      # http://127.0.0.1:8000
+.venv/bin/python -m outlier.cli fixtures
+.venv/bin/python -m outlier.cli run sample.seed
+.venv/bin/python -m outlier.cli serve      # http://127.0.0.1:8000
 ```
+
+`sample.*` handles always resolve to the bundled fixtures, so this works identically whether or not
+you have API keys set.
 
 `fixtures` synthesizes six sample accounts *and renders real MP4s for them with ffmpeg*, each with a
 deliberately different cut rhythm. So the whole media pipeline (download, scene detection, keyframe
@@ -90,12 +110,14 @@ pipeline: the numbers in the report were measured from actual video files.
 ## Real usage
 
 ```bash
-export APIFY_TOKEN=...
-python -m outlier.cli run nike                          # one-shot teardown vs the niche
+cp .env.example .env && $EDITOR .env      # keys are read from here
 
-python -m outlier.cli watch add somecreator learning    # build a watchlist
-python -m outlier.cli watch add rival competitor
-python -m outlier.cli track                             # one pass, writes data/digest.md
+.venv/bin/python -m outlier.cli run nike                       # teardown vs the niche
+.venv/bin/python -m outlier.cli run nike --peers rival1,rival2 # or name the peers yourself
+
+.venv/bin/python -m outlier.cli watch add somecreator learning
+.venv/bin/python -m outlier.cli watch add rival competitor
+.venv/bin/python -m outlier.cli track                          # writes data/digest.md
 ```
 
 Put `track` on a schedule and it becomes a standing radar:
