@@ -124,6 +124,13 @@ th { font-family:var(--mono); color:var(--muted); font-weight:500; font-size:11p
 .banner { background:var(--surface-2); border:1px solid var(--signal);
           border-radius:var(--radius); padding:11px 15px; margin-bottom:18px;
           font-family:var(--mono); font-size:13px; }
+/* Past runs as evidence tiles: the thumbnails are real extracted keyframes. */
+a.tile { display:block; color:inherit; text-decoration:none; transition:border-color .12s; }
+a.tile:hover { border-color:var(--primary); text-decoration:none; }
+.tilemeta { font-size:12px; margin-bottom:10px; }
+.strip { display:flex; gap:4px; overflow:hidden; margin:10px 0; }
+.strip img { height:96px; border-radius:4px; border:1px solid var(--line);
+             background:var(--surface-2); flex:none; }
 .k { font-family:var(--mono); font-size:11px; text-transform:uppercase;
      letter-spacing:.14em; color:var(--muted); display:block; margin-bottom:6px; }
 
@@ -194,6 +201,47 @@ def _busy_banner() -> str:
 # ---------------------------------------------------------------- views
 
 
+def _run_tile(row: dict) -> str:
+    """One past teardown, as a card with real keyframes rather than a table row.
+
+    A list of handles and timestamps tells you nothing about what is inside.
+    The thumbnails are the actual frames the tool pulled out of the reels it
+    analyzed, so the index doubles as evidence that a run really happened.
+    """
+    report = store.get_run(row["id"]) or {}
+    you = report.get("you") or {}
+    teardowns = list(you.get("teardowns") or [])
+    for competitor in report.get("competitors") or []:
+        teardowns.extend(competitor.get("teardowns") or [])
+
+    thumbs = [f for t in teardowns for f in (t.get("frames") or [])][:8]
+    strip = (
+        "<div class=strip>"
+        + "".join(f"<img src='/frames/{e(f)}' loading=lazy alt=''>" for f in thumbs)
+        + "</div>"
+    ) if thumbs else ""
+
+    verdict = report.get("verdict") or ""
+    if len(verdict) > 190:
+        verdict = verdict[:190].rsplit(" ", 1)[0] + "..."
+
+    peers = len(report.get("competitors") or [])
+    when = e(str(row.get("createdAt", ""))[:16].replace("T", " "))
+    meta = f"{len(teardowns)} reels torn down &middot; {peers} peers &middot; {when}"
+
+    followers = you.get("followers")
+    size = f"<span class=pill>{_count(followers)} followers</span>" if followers else ""
+
+    return (
+        f"<a class='card tile' href='/run/{row['id']}'>"
+        f"<div class=row><h3>@{e(row.get('seed'))}</h3>{size}</div>"
+        f"<div class='dim stat tilemeta'>{meta}</div>"
+        f"{strip}"
+        f"{f'<p class=dim>{e(verdict)}</p>' if verdict else ''}"
+        f"</a>"
+    )
+
+
 @app.get("/", response_class=HTMLResponse)
 def home():
     cats = store.categories()
@@ -232,11 +280,9 @@ def home():
         for b in breakouts
     ) or "<div class='card empty'>No breakouts detected yet. Run a tracking pass.</div>"
 
-    run_html = "".join(
-        f"<tr><td><a href='/run/{r['id']}'>@{e(r['seed'])}</a></td>"
-        f"<td class=dim>{e(r['createdAt'][:16].replace('T', ' '))}</td></tr>"
-        for r in runs
-    ) or "<tr><td class=dim colspan=2>No teardowns yet.</td></tr>"
+    run_html = "".join(_run_tile(r) for r in runs) or (
+        "<div class='card empty'>No teardowns yet. Enter a handle above to run one.</div>"
+    )
 
     return page("Outlier", f"""
       <h1>Outlier</h1>
@@ -274,7 +320,7 @@ def home():
       {breakout_html}
 
       <h2>Teardowns</h2>
-      <div class=card><table><tr><th>Account</th><th>When</th></tr>{run_html}</table></div>
+      {run_html}
     """)
 
 
