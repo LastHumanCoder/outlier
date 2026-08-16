@@ -1,7 +1,12 @@
-# ffmpeg is the only system dependency. Everything else is three pip packages.
+# ffmpeg is the only real system dependency. Everything else is pip packages.
 FROM python:3.12-slim
 
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg \
+# fonts-dejavu-core is not optional: generating the sample dataset burns text
+# into the video with ffmpeg's drawtext filter, which needs a font file on disk.
+# The slim image ships none, so without this the fixture step below fails the
+# build with "No usable font found".
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ffmpeg fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app

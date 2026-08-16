@@ -91,6 +91,10 @@ dependencies, and renders the sample dataset at build time so a fresh deploy has
 rather than an empty dashboard. Set `APIFY_TOKEN`, `GEMINI_API_KEY` and `VIDEODB_API_KEY` as
 service variables to enable live runs. It listens on `$PORT`.
 
+Note that Railway's filesystem is ephemeral: the SQLite database and extracted keyframes reset on
+every redeploy. That is fine for a demo instance. For anything you want to keep, attach a volume at
+`/app/data`.
+
 ## Run it with no keys at all
 
 ```bash
