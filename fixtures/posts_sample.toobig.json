@@ -8,7 +8,7 @@
     "likesCount": 266108,
     "commentsCount": 20029,
     "videoPlayCount": 4005932,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-0.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-0.mp4",
     "videoDuration": 29.87171505174645,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-01T12:00:00.000Z"
@@ -22,7 +22,7 @@
     "likesCount": 229150,
     "commentsCount": 17247,
     "videoPlayCount": 3449572,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-1.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-1.mp4",
     "videoDuration": 19.36037521240511,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-02T12:00:00.000Z"
@@ -36,7 +36,7 @@
     "likesCount": 271540,
     "commentsCount": 20438,
     "videoPlayCount": 4087706,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-0.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-0.mp4",
     "videoDuration": 38.60059329792703,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-03T12:00:00.000Z"
@@ -50,7 +50,7 @@
     "likesCount": 1247993,
     "commentsCount": 93935,
     "videoPlayCount": 18787006,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-1.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-1.mp4",
     "videoDuration": 38.5097601300657,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-04T12:00:00.000Z"
@@ -64,7 +64,7 @@
     "likesCount": 187587,
     "commentsCount": 14119,
     "videoPlayCount": 2823898,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-0.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-0.mp4",
     "videoDuration": 23.733563930713622,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-05T12:00:00.000Z"
@@ -78,7 +78,7 @@
     "likesCount": 164123,
     "commentsCount": 12353,
     "videoPlayCount": 2470678,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-1.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-1.mp4",
     "videoDuration": 38.073766508853524,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-06T12:00:00.000Z"
@@ -92,7 +92,7 @@
     "likesCount": 224968,
     "commentsCount": 16933,
     "videoPlayCount": 3386628,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-0.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-0.mp4",
     "videoDuration": 34.85322407610407,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-07T12:00:00.000Z"
@@ -106,7 +106,7 @@
     "likesCount": 291444,
     "commentsCount": 21936,
     "videoPlayCount": 4387334,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-1.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-1.mp4",
     "videoDuration": 38.68266951234415,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-08T12:00:00.000Z"
@@ -120,7 +120,7 @@
     "likesCount": 259407,
     "commentsCount": 19525,
     "videoPlayCount": 3905062,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-0.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-0.mp4",
     "videoDuration": 43.515020833604,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-09T12:00:00.000Z"
@@ -134,7 +134,7 @@
     "likesCount": 210198,
     "commentsCount": 15821,
     "videoPlayCount": 3164280,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-1.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-1.mp4",
     "videoDuration": 15.371185865148245,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-10T12:00:00.000Z"
@@ -148,7 +148,7 @@
     "likesCount": 224672,
     "commentsCount": 16910,
     "videoPlayCount": 3382162,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-0.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-0.mp4",
     "videoDuration": 18.74432098811536,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-11T12:00:00.000Z"
@@ -162,7 +162,7 @@
     "likesCount": 245810,
     "commentsCount": 18501,
     "videoPlayCount": 3700368,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-toobig-1.mp4",
+    "videoUrl": "fixtures/videos/sample-toobig-1.mp4",
     "videoDuration": 39.734372400216564,
     "ownerUsername": "sample.toobig",
     "timestamp": "2026-08-12T12:00:00.000Z"

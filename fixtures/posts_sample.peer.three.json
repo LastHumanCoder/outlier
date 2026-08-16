@@ -8,7 +8,7 @@
     "likesCount": 2430,
     "commentsCount": 182,
     "videoPlayCount": 36582,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-0.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-0.mp4",
     "videoDuration": 14.738494923823959,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-01T12:00:00.000Z"
@@ -22,7 +22,7 @@
     "likesCount": 1507,
     "commentsCount": 113,
     "videoPlayCount": 22694,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-1.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-1.mp4",
     "videoDuration": 19.700090761468417,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-02T12:00:00.000Z"
@@ -36,7 +36,7 @@
     "likesCount": 1888,
     "commentsCount": 142,
     "videoPlayCount": 28434,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-0.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-0.mp4",
     "videoDuration": 18.01731484137951,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-03T12:00:00.000Z"
@@ -50,7 +50,7 @@
     "likesCount": 7331,
     "commentsCount": 551,
     "videoPlayCount": 110362,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-1.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-1.mp4",
     "videoDuration": 25.82523453713582,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-04T12:00:00.000Z"
@@ -64,7 +64,7 @@
     "likesCount": 1756,
     "commentsCount": 132,
     "videoPlayCount": 26446,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-0.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-0.mp4",
     "videoDuration": 22.514185476692255,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-05T12:00:00.000Z"
@@ -78,7 +78,7 @@
     "likesCount": 1477,
     "commentsCount": 111,
     "videoPlayCount": 22246,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-1.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-1.mp4",
     "videoDuration": 43.357390339527726,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-06T12:00:00.000Z"
@@ -92,7 +92,7 @@
     "likesCount": 2083,
     "commentsCount": 156,
     "videoPlayCount": 31360,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-0.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-0.mp4",
     "videoDuration": 13.781765476385075,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-07T12:00:00.000Z"
@@ -106,7 +106,7 @@
     "likesCount": 2363,
     "commentsCount": 177,
     "videoPlayCount": 35574,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-1.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-1.mp4",
     "videoDuration": 38.32981299948668,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-08T12:00:00.000Z"
@@ -120,7 +120,7 @@
     "likesCount": 1782,
     "commentsCount": 134,
     "videoPlayCount": 26838,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-0.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-0.mp4",
     "videoDuration": 25.005960527187018,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-09T12:00:00.000Z"
@@ -134,7 +134,7 @@
     "likesCount": 1885,
     "commentsCount": 141,
     "videoPlayCount": 28378,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-1.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-1.mp4",
     "videoDuration": 14.05417811341669,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-10T12:00:00.000Z"
@@ -148,7 +148,7 @@
     "likesCount": 1410,
     "commentsCount": 106,
     "videoPlayCount": 21238,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-0.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-0.mp4",
     "videoDuration": 26.540686654716765,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-11T12:00:00.000Z"
@@ -162,7 +162,7 @@
     "likesCount": 1460,
     "commentsCount": 109,
     "videoPlayCount": 21980,
-    "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-peer-three-1.mp4",
+    "videoUrl": "fixtures/videos/sample-peer-three-1.mp4",
     "videoDuration": 13.734994928378809,
     "ownerUsername": "sample.peer.three",
     "timestamp": "2026-08-12T12:00:00.000Z"

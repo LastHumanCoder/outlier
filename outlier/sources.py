@@ -47,8 +47,26 @@ def _fixture(name: str) -> list[dict]:
     return json.loads(path.read_text())
 
 
+SAMPLE_PREFIX = "sample."
+
+
+def _is_sample(payload: dict) -> bool:
+    """Whether this request is for the bundled sample dataset.
+
+    Without this check, having an APIFY_TOKEN in the environment made
+    `run sample.seed` hit the live API looking for an account named
+    "sample.seed", get an error record back, and then go scrape whatever real
+    accounts the inferred hashtags pointed at. Sample data must resolve to
+    fixtures regardless of which keys happen to be set.
+    """
+    names = payload.get("usernames") or payload.get("username") or []
+    if isinstance(names, str):
+        names = [names]
+    return bool(names) and all(str(n).startswith(SAMPLE_PREFIX) for n in names)
+
+
 def _run(actor: str, payload: dict, fixture: str) -> list[dict]:
-    if not has_token():
+    if not has_token() or _is_sample(payload):
         return _fixture(fixture)
 
     res = requests.post(

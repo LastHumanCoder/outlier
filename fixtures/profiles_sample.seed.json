@@ -34,7 +34,7 @@
         "likesCount": 205,
         "commentsCount": 15,
         "videoPlayCount": 3094,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-0.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-0.mp4",
         "videoDuration": 25.029175381964727,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-01T12:00:00.000Z"
@@ -48,7 +48,7 @@
         "likesCount": 167,
         "commentsCount": 12,
         "videoPlayCount": 2520,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-1.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-1.mp4",
         "videoDuration": 15.106291384009523,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-02T12:00:00.000Z"
@@ -62,7 +62,7 @@
         "likesCount": 241,
         "commentsCount": 18,
         "videoPlayCount": 3640,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-0.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-0.mp4",
         "videoDuration": 19.085039967576837,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-03T12:00:00.000Z"
@@ -76,7 +76,7 @@
         "likesCount": 750,
         "commentsCount": 56,
         "videoPlayCount": 11298,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-1.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-1.mp4",
         "videoDuration": 14.305228977962425,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-04T12:00:00.000Z"
@@ -90,7 +90,7 @@
         "likesCount": 173,
         "commentsCount": 13,
         "videoPlayCount": 2618,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-0.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-0.mp4",
         "videoDuration": 13.950646700606642,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-05T12:00:00.000Z"
@@ -104,7 +104,7 @@
         "likesCount": 239,
         "commentsCount": 17,
         "videoPlayCount": 3598,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-1.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-1.mp4",
         "videoDuration": 32.81065521914732,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-06T12:00:00.000Z"
@@ -118,7 +118,7 @@
         "likesCount": 241,
         "commentsCount": 18,
         "videoPlayCount": 3640,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-0.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-0.mp4",
         "videoDuration": 31.044397304377455,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-07T12:00:00.000Z"
@@ -132,7 +132,7 @@
         "likesCount": 215,
         "commentsCount": 16,
         "videoPlayCount": 3248,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-1.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-1.mp4",
         "videoDuration": 13.537228460385958,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-08T12:00:00.000Z"
@@ -146,7 +146,7 @@
         "likesCount": 279,
         "commentsCount": 21,
         "videoPlayCount": 4214,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-0.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-0.mp4",
         "videoDuration": 25.831588437858354,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-09T12:00:00.000Z"
@@ -160,7 +160,7 @@
         "likesCount": 236,
         "commentsCount": 17,
         "videoPlayCount": 3556,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-1.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-1.mp4",
         "videoDuration": 22.179900195363835,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-10T12:00:00.000Z"
@@ -174,7 +174,7 @@
         "likesCount": 274,
         "commentsCount": 20,
         "videoPlayCount": 4130,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-0.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-0.mp4",
         "videoDuration": 15.400838510638515,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-11T12:00:00.000Z"
@@ -188,7 +188,7 @@
         "likesCount": 239,
         "commentsCount": 18,
         "videoPlayCount": 3612,
-        "videoUrl": "/Users/shivanshutripathi/Desktop/Building Shit/outlier/fixtures/videos/sample-seed-1.mp4",
+        "videoUrl": "fixtures/videos/sample-seed-1.mp4",
         "videoDuration": 24.28911890994913,
         "ownerUsername": "sample.seed",
         "timestamp": "2026-08-12T12:00:00.000Z"

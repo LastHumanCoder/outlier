@@ -23,6 +23,25 @@ from pathlib import Path
 
 from . import pipeline, sources, store, track
 
+ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
+
+
+def _load_env() -> None:
+    """Read .env into the environment if present.
+
+    The README tells people to create a .env, so it has to actually be read.
+    Doing it by hand rather than adding python-dotenv keeps the dependency
+    list at three packages. Real environment variables always win.
+    """
+    if not ENV_FILE.exists():
+        return
+    for line in ENV_FILE.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        os.environ.setdefault(key.strip(), value.strip())
+
 VIDEO_DIR = Path(__file__).resolve().parent.parent / "fixtures" / "videos"
 
 FONTS = [
@@ -130,7 +149,9 @@ def _post(username: str, i: int, base: int, viral: bool, video: Path,
         "likesCount": int(total * 0.93),
         "commentsCount": int(total * 0.07),
         "videoPlayCount": total * 14,
-        "videoUrl": str(video),
+        # Relative to the repo root: an absolute path here would only
+        # resolve on the machine that generated the fixtures.
+        "videoUrl": str(video.relative_to(VIDEO_DIR.parent.parent)),
         "videoDuration": rng.uniform(12.0, 45.0),
         "ownerUsername": username,
         "timestamp": f"2026-08-{(i % 28) + 1:02d}T12:00:00.000Z",
@@ -187,6 +208,7 @@ def build_fixtures() -> None:
 
 
 def main(argv: list[str]) -> int:
+    _load_env()
     if not argv or argv[0] in {"-h", "--help", "help"}:
         print(__doc__)
         return 0

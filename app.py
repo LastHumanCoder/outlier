@@ -96,8 +96,13 @@ h3 { font-size:17px; margin:0 0 6px; font-weight:600; }
 .pill.hot { border-color:var(--lift); color:var(--lift); }
 .stat, .dim.stat { font-family:var(--mono); font-variant-numeric:tabular-nums; }
 .dim { color:var(--muted); }
-.frames { display:flex; gap:6px; overflow-x:auto; margin:12px 0; padding-bottom:4px; }
-.frames img { height:170px; border-radius:6px; border:1px solid var(--line); }
+/* The filmstrip is the proof something watched the video, so it gets room:
+   9:16 keyframes tall enough that burned-in on-screen text stays legible. */
+.frames { display:flex; gap:8px; overflow-x:auto; margin:16px 0; padding-bottom:8px;
+          scroll-snap-type:x proximity; }
+.frames img { height:264px; border-radius:6px; border:1px solid var(--line);
+              background:var(--surface-2); scroll-snap-align:start; flex:none; }
+@media (max-width:640px) { .frames img { height:190px; } }
 input, select, button { font:inherit; font-family:var(--mono); font-size:14px;
         padding:9px 12px; border-radius:var(--radius);
         border:1px solid var(--line); background:var(--surface-2); color:var(--fg); }
@@ -119,6 +124,36 @@ th { font-family:var(--mono); color:var(--muted); font-weight:500; font-size:11p
 .banner { background:var(--surface-2); border:1px solid var(--signal);
           border-radius:var(--radius); padding:11px 15px; margin-bottom:18px;
           font-family:var(--mono); font-size:13px; }
+.k { font-family:var(--mono); font-size:11px; text-transform:uppercase;
+     letter-spacing:.14em; color:var(--muted); display:block; margin-bottom:6px; }
+
+/* Report header stats: machine numbers, so mono and tabular. */
+.stats { display:flex; flex-wrap:wrap; gap:10px 34px; margin:0 0 26px;
+         font-family:var(--mono); font-variant-numeric:tabular-nums; }
+.stats .v { font-size:20px; font-weight:500; letter-spacing:-.02em; }
+
+/* Them / You is the core comparison unit, so the two halves are one object
+   split down the middle rather than two paragraphs in a stack. */
+.compare { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line);
+           border:1px solid var(--line); border-radius:var(--radius);
+           overflow:hidden; margin:12px 0; }
+.compare > div { background:var(--surface-2); padding:13px 15px; }
+.compare p { margin:0; }
+.compare .them .k { color:var(--signal); }
+.compare .you .k { color:var(--lift); }
+@media (max-width:640px) { .compare { grid-template-columns:1fr; } }
+.fix { border-left:2px solid var(--primary); background:var(--surface-2);
+       border-radius:0 var(--radius) var(--radius) 0; padding:12px 15px; }
+.fix .k { color:var(--primary); }
+
+/* The hook line is what gets copied: biggest thing on the card, and one click
+   selects the whole line. */
+.hook { font-size:22px; line-height:1.35; font-weight:600; margin:12px 0;
+        padding:2px 0 2px 14px; border-left:2px solid var(--primary);
+        user-select:all; -webkit-user-select:all; cursor:text; }
+.cite { font-family:var(--mono); font-size:12px; color:var(--muted);
+        margin:10px 0 0; word-break:break-all; }
+.cite a { color:var(--muted); text-decoration:underline; }
 """
 
 
@@ -279,6 +314,45 @@ def _teardown_card(t: dict, who: str) -> str:
     return f"<div class=card>{''.join(bits)}</div>"
 
 
+def _count(v) -> str:
+    """Every field is optional, so a missing number says so rather than lying with 0."""
+    return f"{v:,}" if isinstance(v, (int, float)) and not isinstance(v, bool) else "n/a"
+
+
+def _pct(v) -> str:
+    return f"{v * 100:.2f}%" if isinstance(v, (int, float)) and not isinstance(v, bool) else "n/a"
+
+
+def _gap(g: dict) -> str:
+    them, you, fix = g.get("them"), g.get("you"), g.get("fix")
+    compare = ""
+    if them or you:
+        compare = (
+            f"<div class=compare>"
+            f"<div class=them><span class=k>Them</span><p>{e(them)}</p></div>"
+            f"<div class=you><span class=k>You</span><p>{e(you)}</p></div>"
+            f"</div>"
+        )
+    fix_html = f"<div class=fix><span class=k>Fix</span>{e(fix)}</div>" if fix else ""
+    return f"<div class=card><h3>{e(g.get('dimension'))}</h3>{compare}{fix_html}</div>"
+
+
+def _concept(c: dict) -> str:
+    head = [f"<div class=row><h3>{e(c.get('title'))}</h3>"]
+    if c.get("format"):
+        head.append(f"<span class=pill>{e(c['format'])}</span>")
+    head.append("</div>")
+    hook = f"<div class=hook>{e(c['hook'])}</div>" if c.get("hook") else ""
+    why = f"<p>{e(c['why'])}</p>" if c.get("why") else ""
+    cite = ""
+    if c.get("modeledOn"):
+        src = str(c["modeledOn"])
+        inner = (f"<a href='{e(src)}' target=_blank rel=noopener>{e(src)}</a>"
+                 if src.startswith(("https://", "http://")) else e(src))
+        cite = f"<p class=cite>modeled on {inner}</p>"
+    return f"<div class=card>{''.join(head)}{hook}{why}{cite}</div>"
+
+
 @app.get("/run/{run_id}", response_class=HTMLResponse)
 def run_view(run_id: int):
     report = store.get_run(run_id)
@@ -287,48 +361,40 @@ def run_view(run_id: int):
 
     you = report.get("you") or {}
     gaps = "".join(
-        f"<div class=card><h3>{e(g.get('dimension'))}</h3>"
-        f"<p><b>Them:</b> {e(g.get('them'))}</p>"
-        f"<p><b>You:</b> {e(g.get('you'))}</p>"
-        f"<p><b>Fix:</b> {e(g.get('fix'))}</p></div>"
-        for g in report.get("gaps", [])
+        _gap(g) for g in (report.get("gaps") or [])
     ) or "<div class='card empty'>No gap analysis (LLM key missing on this run).</div>"
 
-    def _concept(c: dict) -> str:
-        modeled = f"<p class=dim>modeled on {e(c.get('modeledOn'))}</p>" if c.get("modeledOn") else ""
-        return (
-            f"<div class=card><h3>{e(c.get('title'))}</h3>"
-            f"<div class=quote>{e(c.get('hook'))}</div>"
-            f"<div class=dim>{e(c.get('format'))}</div>"
-            f"<p>{e(c.get('why'))}</p>{modeled}</div>"
-        )
-
-    concepts = "".join(_concept(c) for c in report.get("concepts", []))
+    concepts = "".join(_concept(c) for c in (report.get("concepts") or []))
 
     peers_html = ""
-    for c in report.get("competitors", []):
+    for c in report.get("competitors") or []:
         peers_html += (
             f"<div class=card><div class=row><h3>@{e(c.get('username'))}</h3>"
-            f"<span class=pill>{c.get('followers', 0):,} followers</span>"
-            f"<span class='pill hot'>ER {(c.get('engagementRate') or 0) * 100:.2f}%</span>"
+            f"<span class=pill>{_count(c.get('followers'))} followers</span>"
+            f"<span class='pill hot'>ER {_pct(c.get('engagementRate'))}</span>"
             f"</div></div>"
         )
-        for t in c.get("teardowns", []):
+        for t in c.get("teardowns") or []:
             peers_html += _teardown_card(t, c.get("username"))
 
-    own = "".join(_teardown_card(t, you.get("username")) for t in you.get("teardowns", []))
+    own = "".join(_teardown_card(t, you.get("username")) for t in you.get("teardowns") or [])
     verdict = (
         f"<div class=card><h3>Verdict</h3><p>{e(report['verdict'])}</p></div>"
         if report.get("verdict") else ""
     )
-    when = e(report.get("createdAt", "")[:16].replace("T", " "))
+    when = e(str(report.get("createdAt") or "")[:16].replace("T", " "))
     concepts_section = f"<h2>Shoot these next</h2>{concepts}" if concepts else ""
+    seed = report.get("seed") or "unknown"
 
-    return page(f"@{report['seed']}", f"""
+    return page(f"@{seed}", f"""
       <p><a href=/>&larr; all runs</a></p>
-      <h1>@{e(report['seed'])}</h1>
-      <p class=sub>{you.get('followers', 0):,} followers &middot;
-         ER {(you.get('engagementRate') or 0) * 100:.2f}% &middot; {when}</p>
+      <h1>@{e(seed)}</h1>
+      <div class=stats>
+        <div><span class=k>Followers</span><span class=v>{_count(you.get('followers'))}</span></div>
+        <div><span class=k>Engagement rate</span><span class=v>{_pct(you.get('engagementRate'))}</span></div>
+        <div><span class=k>Posts</span><span class=v>{_count(you.get('postsCount'))}</span></div>
+        <div><span class=k>Run</span><span class=v>{when or "n/a"}</span></div>
+      </div>
       {verdict}
       <h2>Gaps</h2>{gaps}
       {concepts_section}

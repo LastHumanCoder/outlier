@@ -22,6 +22,9 @@ import requests
 
 VIDEODB = "https://api.videodb.io"
 
+# Repo root, used to resolve fixture video paths that are stored relative.
+ROOT = Path(__file__).resolve().parent.parent
+
 # Scene-change sensitivity for ffmpeg's `scene` filter. 0.3 is a middle setting:
 # it catches hard cuts and ignores camera shake. Short-form reels cut hard, so
 # false negatives are rarer than false positives here.
@@ -40,7 +43,12 @@ def download(url: str, dest: Path) -> Path:
     no network at all: the synthesized sample reels are already on disk.
     """
     if not url.startswith(("http://", "https://")):
+        # Fixture paths are stored relative to the repo root so the committed
+        # JSON works on any machine. An absolute path baked in at generation
+        # time made the sample data unusable for everyone but its author.
         local = Path(url.removeprefix("file://"))
+        if not local.is_absolute():
+            local = ROOT / local
         if not local.exists():
             raise FileNotFoundError(f"Local video missing: {local}")
         return local
