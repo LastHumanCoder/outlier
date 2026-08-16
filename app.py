@@ -18,11 +18,20 @@ from fastapi import BackgroundTasks, FastAPI, Form
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
-from outlier import pipeline, store, track
+from outlier import pipeline, seed, store, track
 
 app = FastAPI(title="Outlier")
 
 pipeline.FRAMES_DIR.mkdir(parents=True, exist_ok=True)
+
+# A deployed instance starts with an empty database, and an empty dashboard
+# explains nothing. Import the committed sample runs so the page shows real
+# accounts, real keyframes and real measurements on first load. No-op once any
+# run exists, so it can never clobber real work.
+_seeded = seed.seed_if_empty()
+if _seeded:
+    print(f"seeded {_seeded} sample runs into an empty database")
+
 app.mount("/frames", StaticFiles(directory=pipeline.FRAMES_DIR), name="frames")
 
 JOBS: dict[str, dict] = {}

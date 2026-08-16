@@ -18,6 +18,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -73,14 +74,24 @@ def _run(actor: str, payload: dict, fixture: str) -> list[dict]:
     # The token goes in a header, not the query string. As a query param it
     # ends up inside every requests HTTPError message, so any crash log,
     # screen-share or pasted traceback leaks the credential.
-    res = requests.post(
-        f"{API}/{actor}/run-sync-get-dataset-items",
-        headers={"Authorization": f"Bearer {os.environ['APIFY_TOKEN']}"},
-        json=payload,
-        timeout=TIMEOUT,
-    )
-    res.raise_for_status()
-    return res.json()
+    headers = {"Authorization": f"Bearer {os.environ['APIFY_TOKEN']}"}
+    url = f"{API}/{actor}/run-sync-get-dataset-items"
+
+    # A scrape that fails here has usually already been paid for upstream, and
+    # a single transient 5xx used to kill an eight minute run outright.
+    last = None
+    for attempt in range(3):
+        res = requests.post(url, headers=headers, json=payload, timeout=TIMEOUT)
+        if res.ok:
+            return res.json()
+        last = res
+        # A 400 means the input itself is wrong, so retrying just wastes time.
+        if res.status_code < 500 and res.status_code != 429:
+            break
+        if attempt < 2:
+            time.sleep(2 ** attempt * 5)
+    last.raise_for_status()
+    return []
 
 
 def fetch_profiles(usernames: list[str]) -> list[dict]:

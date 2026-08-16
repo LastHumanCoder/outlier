@@ -1,0 +1,189 @@
+{
+  "seed": "wesbos",
+  "you": {
+    "username": "wesbos",
+    "fullName": "Wes Bos",
+    "biography": "Fullstack web developer. @syntax_fm co-host. Mostly fixing stuff, cooking and coding. \ud83c\udde8\ud83c\udde6 Hamilton",
+    "followers": 57229,
+    "postsCount": 1566,
+    "engagementRate": 0.01027,
+    "medianEngagement": 625,
+    "teardowns": [
+      {
+        "shortCode": "DWjUzO8CsuD",
+        "url": "https://www.instagram.com/p/DWjUzO8CsuD/",
+        "lift": 1.0,
+        "likes": 53351,
+        "comments": 417,
+        "views": 1641093,
+        "caption": "Claude Code source was just leaked",
+        "rhythm": {
+          "durationSec": 63.53,
+          "cuts": 1,
+          "cutsPerSec": 0.02,
+          "avgShotSec": 31.76,
+          "firstCutSec": 0.83
+        },
+        "transcript": "",
+        "frames": [
+          "DWjUzO8CsuD/frame_00.jpg",
+          "DWjUzO8CsuD/frame_01.jpg",
+          "DWjUzO8CsuD/frame_02.jpg",
+          "DWjUzO8CsuD/frame_03.jpg",
+          "DWjUzO8CsuD/frame_04.jpg"
+        ]
+      },
+      {
+        "shortCode": "DXuWyJlj-ME",
+        "url": "https://www.instagram.com/p/DXuWyJlj-ME/",
+        "lift": 1.0,
+        "likes": 14615,
+        "comments": 51,
+        "views": 171164,
+        "caption": "Cursor Camp is the best thing I've seen all week",
+        "rhythm": {
+          "durationSec": 70.13,
+          "cuts": 0,
+          "cutsPerSec": 0.0,
+          "avgShotSec": 70.13,
+          "firstCutSec": null
+        },
+        "transcript": "",
+        "frames": [
+          "DXuWyJlj-ME/frame_00.jpg",
+          "DXuWyJlj-ME/frame_01.jpg",
+          "DXuWyJlj-ME/frame_02.jpg",
+          "DXuWyJlj-ME/frame_03.jpg",
+          "DXuWyJlj-ME/frame_04.jpg"
+        ]
+      }
+    ]
+  },
+  "competitors": [
+    {
+      "username": "mds",
+      "fullName": "Matt D. Smith",
+      "biography": "Design, code, and AI. Training world-class, modern interface builders through @shiftnudge",
+      "followers": 87805,
+      "postsCount": 1132,
+      "engagementRate": 0.00337,
+      "medianEngagement": 310,
+      "teardowns": [
+        {
+          "shortCode": "DJKh0O-y3kz",
+          "url": "https://www.instagram.com/p/DJKh0O-y3kz/",
+          "lift": 107.55,
+          "likes": 31700,
+          "comments": 135,
+          "views": 653830,
+          "caption": "How do you go from this...\n\nto this?\n\nAnd why does this one feel instantly easier to read?\n\nThe first version isn\u2019t broken\nbut it\u2019s not working as well as it could be \n\nThe status tag looks a bit like a button.\n\nAnd the title can\u2019t scale very well. \n\nIf we add a second or third line, the layout starts to fall apart.\n\nThe spacing feels a little loose,\n\nAnd the yellow with white text fails contrast ",
+          "rhythm": {
+            "durationSec": 59.6,
+            "cuts": 6,
+            "cutsPerSec": 0.1,
+            "avgShotSec": 8.51,
+            "firstCutSec": 0.78
+          },
+          "transcript": "",
+          "frames": [
+            "DJKh0O-y3kz/frame_00.jpg",
+            "DJKh0O-y3kz/frame_01.jpg",
+            "DJKh0O-y3kz/frame_02.jpg",
+            "DJKh0O-y3kz/frame_03.jpg",
+            "DJKh0O-y3kz/frame_04.jpg",
+            "DJKh0O-y3kz/frame_05.jpg"
+          ]
+        },
+        {
+          "shortCode": "DW6XMnNvlDK",
+          "url": "https://www.instagram.com/p/DW6XMnNvlDK/",
+          "lift": 37.26,
+          "likes": 10083,
+          "comments": 947,
+          "views": 199525,
+          "caption": "Comment VAULT to get these files\n\n#ui #figma #design",
+          "rhythm": {
+            "durationSec": 47.65,
+            "cuts": 2,
+            "cutsPerSec": 0.04,
+            "avgShotSec": 15.88,
+            "firstCutSec": 1.97
+          },
+          "transcript": "",
+          "frames": [
+            "DW6XMnNvlDK/frame_00.jpg",
+            "DW6XMnNvlDK/frame_01.jpg",
+            "DW6XMnNvlDK/frame_02.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "username": "codetourig",
+      "fullName": "Chris Flannery / Code Tour",
+      "biography": "\ud83d\udccdNew Jersey \nWeb, Systems, AI \ud83d\udd2a",
+      "followers": 63268,
+      "postsCount": 350,
+      "engagementRate": 0.00212,
+      "medianEngagement": 142,
+      "teardowns": [
+        {
+          "shortCode": "DVEOaV1jeqW",
+          "url": "https://www.instagram.com/p/DVEOaV1jeqW/",
+          "lift": 33.39,
+          "likes": 4410,
+          "comments": 64,
+          "views": 109043,
+          "caption": "Partial hydration #software #computerscience",
+          "rhythm": {
+            "durationSec": 182.0,
+            "cuts": 3,
+            "cutsPerSec": 0.02,
+            "avgShotSec": 45.5,
+            "firstCutSec": 3.4
+          },
+          "transcript": "",
+          "frames": [
+            "DVEOaV1jeqW/frame_00.jpg",
+            "DVEOaV1jeqW/frame_01.jpg",
+            "DVEOaV1jeqW/frame_02.jpg",
+            "DVEOaV1jeqW/frame_03.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "username": "startups",
+      "fullName": "Startups.com",
+      "biography": "#1 Community for Startup Founders. We help startups launch faster! \ud83d\ude80\n\ud83c\udfa5 Watch & learn from the #StartupTherapy podcast with @wilschroter and @ryanrutan",
+      "followers": 17458,
+      "postsCount": 443,
+      "engagementRate": 0.00069,
+      "medianEngagement": 12,
+      "teardowns": [
+        {
+          "shortCode": "DPMrNPvjMDF",
+          "url": "https://www.instagram.com/p/DPMrNPvjMDF/",
+          "lift": 8.42,
+          "likes": 90,
+          "comments": 11,
+          "views": 14412,
+          "caption": "More investors don\u2019t mean better chances.\nThe right fit is what matters. \ud83d\udca1\n\nThat\u2019s why we built Investor Matching \u2014 so founders can stop wasting time and start talking to the people who actually make sense.\n\nTry it out at Startups.com and let us know what you think.\n\n#fundraising #startuplife #founders #entrepreneurship",
+          "rhythm": {
+            "durationSec": 20.22,
+            "cuts": 1,
+            "cutsPerSec": 0.05,
+            "avgShotSec": 10.11,
+            "firstCutSec": 18.43
+          },
+          "transcript": "",
+          "frames": [
+            "DPMrNPvjMDF/frame_00.jpg",
+            "DPMrNPvjMDF/frame_01.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "id": 3
+}
