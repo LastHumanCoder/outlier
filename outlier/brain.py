@@ -59,6 +59,11 @@ def _post(url: str, *, attempts: int = 4, **kw) -> requests.Response:
         res = requests.post(url, **kw)
         if res.status_code not in RETRY_STATUS:
             return res
+        # A 429 for an exhausted daily quota is not transient, and retrying it
+        # four times per reel just burns the clock. Only back off for rate
+        # limiting that says nothing about quota.
+        if res.status_code == 429 and "quota" in res.text.lower():
+            return res
         last = res
         if attempt < attempts - 1:
             time.sleep(2 ** attempt * 3)
