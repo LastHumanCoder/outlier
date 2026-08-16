@@ -184,9 +184,11 @@ Verified end to end against live Instagram data (`@hubspot`, 656k followers):
 
 Not yet verified:
 
-- **Transcripts on a speech-bearing video.** Upload and polling are confirmed. Every reel tested
-  so far returned no speech, which is normal for music-led and text-on-screen content but means
-  the transcript-to-analysis path has not been exercised with real text.
+- **Transcripts never returned text on a real reel.** Upload and job polling against VideoDB are
+  confirmed working, but across 18 live Instagram reels the transcript came back empty every single
+  time. Every teardown in this repo therefore ran on keyframes and caption alone. Treat the
+  transcript input as unproven: it is wired up and it degrades cleanly, but it has not once
+  contributed to an analysis.
 
 Two API traps worth flagging, both of which cost real debugging time:
 

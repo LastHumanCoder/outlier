@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from pathlib import Path
 
 import requests
@@ -69,9 +70,12 @@ def _run(actor: str, payload: dict, fixture: str) -> list[dict]:
     if not has_token() or _is_sample(payload):
         return _fixture(fixture)
 
+    # The token goes in a header, not the query string. As a query param it
+    # ends up inside every requests HTTPError message, so any crash log,
+    # screen-share or pasted traceback leaks the credential.
     res = requests.post(
         f"{API}/{actor}/run-sync-get-dataset-items",
-        params={"token": os.environ["APIFY_TOKEN"]},
+        headers={"Authorization": f"Bearer {os.environ['APIFY_TOKEN']}"},
         json=payload,
         timeout=TIMEOUT,
     )
@@ -145,7 +149,10 @@ def top_hashtags(posts: list[dict], limit: int = 3, exclude: str = "") -> list[s
     counts: dict[str, int] = {}
     for p in posts:
         for tag in p.get("hashtags") or []:
-            tag = str(tag).lstrip("#").lower()
+            # Strip everything that is not alphanumeric or underscore. A tag
+            # ending a sentence, like "MetMoment.", is rejected by Apify with a
+            # 400 and kills discovery for that account entirely.
+            tag = re.sub(r"[^0-9a-z_]", "", str(tag).lower())
             if not tag or len(tag) <= 2:
                 continue
             if tag in GENERIC_TAGS or tag in NON_TOPICAL_TAGS:
